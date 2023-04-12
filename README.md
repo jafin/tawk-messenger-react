@@ -31,6 +31,14 @@ yarn add @tawk.to/tawk-messenger-react
 Import **tawk-messenger-react** into the App.js file of your **src/** folder. The **propertyId** and **widgetId** will
 be found on your tawk Dashboard.
 
+
+```text
+https://tawk.to/chat/xxxxxxxxxxxxxxxxxxx/yyyyyyyyyyy
+```
+
+The `PropertyId` is denoted by the `xxxx` segment.  The WidgetId is denoted by the `yyyy` segment
+
+
 Log in to your account and go to **Administration > Channels > Chat Widget**.
 
 When using the API, you will need to use the **useRef** to access the object functions from the **tawk-messenger-react** component.
