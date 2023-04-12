@@ -1,10 +1,9 @@
 import { resolve } from 'node:path'
-import path from 'path'
 import { defineConfig } from 'vite'
 import tsConfigPaths from 'vite-tsconfig-paths'
 import react from '@vitejs/plugin-react'
 import dts from 'vite-plugin-dts'
-import { EsLinter, linterPlugin, TypeScriptLinter } from "vite-plugin-linter";
+import { EsLinter, linterPlugin, TypeScriptLinter } from 'vite-plugin-linter'
 import * as packageJson from './package.json'
 
 // https://vitejs.dev/config/
@@ -29,7 +28,6 @@ export default defineConfig((configEnv) => ({
     },
     rollupOptions: {
       external: [...Object.keys(packageJson.peerDependencies)],
-      //external: ['react'],
 
       output: {
         globals: {

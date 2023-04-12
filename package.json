@@ -29,7 +29,7 @@
     "dist"
   ],
   "types": "index.d.ts",
-  "ZZtype":"module",
+  "type":"commonjs",
   "main": "./dist/tawk-messenger-react.umd.js",
   "module": "./dist/tawk-messenger-react.es.js",
   "exports": {
@@ -43,7 +43,7 @@
     "test": "react-scripts test",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint --fix 'src/**/*.{jsx,ts,tsx}'",
-    "format": "prettier --write src//**/*.{ts,tsx,css} --config ./.prettierrc"
+    "format": "prettier --write src/**/*.{ts,tsx,css} --config ./.prettierrc"
   },
   "peerDependencies": {
     "react": "^18.1.0",
