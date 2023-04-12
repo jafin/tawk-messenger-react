@@ -12,7 +12,7 @@ export default defineConfig((configEnv) => ({
     react(),
     tsConfigPaths(),
     linterPlugin({
-      include: ['./src}/**/*.{ts,tsx}'],
+      include: ['./src/**/*.{ts,tsx}'],
       linters: [new EsLinter({ configEnv }), new TypeScriptLinter()],
     }),
     dts({
@@ -22,8 +22,9 @@ export default defineConfig((configEnv) => ({
 
   build: {
     lib: {
-      entry: resolve('src', 'index.js'),
+      entry: resolve(__dirname, 'src/index.js'),
       name: 'tawk-messenger-react',
+      formats: ['es','umd'],
       fileName: (format) => `tawk-messenger-react.${format}.js`,
     },
     rollupOptions: {
@@ -32,6 +33,7 @@ export default defineConfig((configEnv) => ({
       output: {
         globals: {
           react: 'React',
+          'react-dom': 'ReactDOM'          
         },
       },
     },
