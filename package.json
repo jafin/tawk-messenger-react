@@ -28,6 +28,7 @@
   "files": [
     "dist"
   ],
+  "types": "index.d.ts",
   "main": "./dist/tawk-messenger-react.umd.js",
   "module": "./dist/tawk-messenger-react.es.js",
   "exports": {
@@ -75,5 +76,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "@types/react": "^18.0.35",
+    "typescript": "^5.0.4"
   }
 }
